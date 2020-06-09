@@ -1,0 +1,104 @@
+body{
+	background-color: rgb(224,224,78);
+}
+.round{
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	top: 212px;
+	left: 445px;
+	z-index: 1;
+	opacity: 0.7;
+	box-shadow: 0 0 10px;
+	animation-name: hey;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+ @keyframes hey{
+ 	45%{
+ 		transform: skewX(-20deg);
+ 	}
+ 	95%{
+ 		transform: skew(20deg);
+ 	}
+ }
+.b{
+	width: 100px;
+	height: 100px;
+	background-color: rgb(220,86,130);
+	position: absolute;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+.b1{
+	top: 100px;
+	left: 400px;
+	transform: rotate(-45deg);
+	animation-name: petal-1;
+}
+ @keyframes petal-1{
+ 	50%{
+ 		top: 170px;
+		left: 470px;
+ 		transform: rotate(45deg);
+ 	}
+ }
+.b2{
+	top: 170px;
+	left: 470px;
+	transform: rotate(45deg);
+	animation-name: petal-2;
+}
+ @keyframes petal-2{
+ 	50%{
+ 		top: 240px;
+		left: 400px;
+ 		transform: rotate(135deg);
+ 	}
+ }
+.b3{
+	top: 240px;
+	left: 400px;
+	transform: rotate(135deg);
+	animation-name: petal-3;
+}
+@keyframes petal-3{
+ 	50%{
+ 		top: 170px;
+		left: 329px;
+ 		transform: rotate(225deg);
+ 	}
+ }
+.b4{
+	top: 170px;
+	left: 329px;
+	transform: rotate(225deg);
+	animation-name: petal-4;
+}
+@keyframes petal-4{
+ 	50%{
+ 		top: 100px;
+		left: 400px;
+ 		transform: rotate(315deg);
+ 	}
+ }
+.b::after{
+	width: 100px;
+	height: 100px;
+	content: "";
+	border-radius: 50%;
+	background-color: rgb(220,86,130);
+	position: absolute;
+	left: 50px;
+}
+.b::before{
+	width: 100px;
+	height: 100px;
+	content: "";
+	border-radius: 50%;
+	background-color: rgb(220,86,130);
+	position: absolute;
+	top: -50px;
+}
